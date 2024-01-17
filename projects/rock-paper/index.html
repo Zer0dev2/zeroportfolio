@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Sissor Game </title>
+</head>
+    <body>
+   <div id="game-box">
+    <center> <h1>Rock Paper Sissor Game </h1>
+    <p style="font-size: 38px;" id="emo">&#128074; &#128400 &#128406;</p></center><br>
+    <div id="main-box">
+        <div id="comp">
+            <h1>Computer</h1>
+            <button class="btn" id="comp-rock">Rock &#128074; </button>
+            <br>
+            <button class="btn" id="comp-paper">Paper &#128400</button>
+            <br>
+            <button class="btn" id="comp-sissor">Sissor &#128406;</button>
+
+        </div>
+        <div id="comp-img">
+            <div><img src="rock.png" alt="" id="c-rock-img"></div>
+            <div><img src="paper.png" alt="" id="c-paper-img"></div>
+            <div><img src="sissor.jpeg" alt="" id="c-sissor-img"></div>
+
+        </div>
+        <div id="user-img">
+            <div><img src="rock.png" alt="" style="transform: rotate(180deg);" id="u-rock-img"></div>
+            <div><img src="paper.png" id="u-paper-img" alt=""></div>
+            <div><img src="sissor.jpeg" id="u-sissor-img" alt="" style="transform: rotate(180deg);"></div>
+
+        </div>
+        <div id="user">
+            <h1>User</h1>
+
+            <button class="btn" id="user-rock" onclick="rock()" data-selector="rock" value="11">Rock &#128074;</button>
+            <br>
+            <button class="btn" id="user-paper" onclick="paper()" data-selector="paper" value="22">Paper &#128400</button>
+            <br>
+            <button class="btn" id="user-sissor" onclick="sissor()" data-selector="sissor" value="33">Sissor &#128406;</button>
+
+        </div>
+
+
+    </div>
+   <center> <div><h1 id="res"></h1></div></center>
+    <script src="script.js"></script>
+
+    <br>
+    <center><span>Computer Socre :-</span> <span id="c-score"></span>
+    <br><span>User Socre :-</span> <span id="u-score"></span>
+    </center>    
+   </div>
+</body>
+</html>

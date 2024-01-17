@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* overflow-x: hidden; */
+    background-color: rgb(21, 21, 21);
+}
+.movieapp{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(1, 9, 82);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    color: whitesmoke;
+    margin-left: 2vw;
+}
+.inputbar{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 15px;
+}
+.inputbar input{
+    width: 25vw;
+    padding: 10px;
+}
+.inputbar button{
+    background-color: crimson;
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    font-size: 23px;
+    transition: 200ms ease-in-out all;
+}
+
+.inputbar button:hover{
+    background-color: rgb(62, 188, 159);
+}
+
+.main{
+    background-color: rgba(245, 245, 245, 0.87);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    margin: 10px auto;
+    
+    height: fit-content;
+}
+.poster{
+    width: 15vw;
+    margin: 10px 30px;
+}
+.titlearea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titlearea h2{
+    font-size: 4vw;
+}
+.ratings{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.ratings h4{
+    font-size: 17px ;
+}
+
+.imdb .col{
+    border: 1px  solid crimson;
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.gener{
+    background-color: crimson;
+
+    color: white;
+    padding: 7px 52px;
+    margin: 16px 0px;
+}
+
+.row2 .col-md{
+    padding-left: 40px;
+}
+.row2 .col-md p{
+    color: crimson;
+    font-weight: bold;
+}
+.row2 .details{
+    color: black;
+    font-weight: 500;
+}
+.plot p{
+color: black !important;
+padding-right: 10px;
+}
+.plot h3{
+    color: crimson;
+}

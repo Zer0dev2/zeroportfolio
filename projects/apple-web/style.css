@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+	/* background-color: rgb(30,30,30); */
+	/* font-family: arial; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar{
+	 display: flex;
+	 justify-content: space-between;
+	 align-content: center;
+	 padding: 7px;
+     
+}
+.logo{
+	color: black;
+	/* font-size: 1.7rem; */
+}
+.menu{
+	display: flex;
+}
+.menu ul {
+	padding: 0;
+	margin: 0;
+
+}
+.menu ul li {
+	float: left;
+	list-style: none;
+}
+.menu ul li a {
+	 color: black;
+	 padding: 7px 15px ;
+	 font-size: 1.7rem;
+	 transition: 150ms ease;
+	 text-decoration: none;
+
+}
+.menu a:hover{
+	color: rgb(0,230,0);
+}
+
+#btn{
+	 border:1px solid black;
+	 background-color: transparent;
+	 color: black;
+	 font-size: 1.1rem;
+	 border-radius: 8px;
+	 transition: 150ms ease;
+	 padding: 6px 9px;
+	 cursor: pointer;	
+}
+.icon{
+	display: none;
+}
+
+/* here we write code for responsive design */
+
+@media (max-width: 1080px){
+	.icon{
+	display: block;
+	}
+	.menu{
+		display: none;
+		background-color: rgb(0,230,0);
+		position: absolute;
+		top: 3%;
+		right: 13%;
+		border-radius: 8px;
+		box-shadow: 0 0 10px black;
+
+
+	}
+	.menu ul li{
+		float: none;
+		width: 150px;
+		list-style: none;
+		padding: 10px;
+	}
+	.menu a:hover{
+		color: crimson;
+	}
+
+
+}
+
+@media (max-width: 600px){
+	.menu{
+		right: 16%;
+	}
+
+}
+
+
+
+/* page 1  */
+
+.page1{
+    background-color: #fafafa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 65px;
+    
+}
+.pg1-txt{
+    width:600px;
+    padding: 20px 20px;
+    margin-bottom:20px ;
+}
+.pg1-img{
+    width:600px;
+}
+
+.abtn{
+    background-color: crimson;
+    color: white;
+    width: 270px;
+    border:1px solid red;
+    font-size: 1.4rem;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.abtn:hover{
+    background-color: rgb(255, 0, 51);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(128, 0, 255);
+
+}
+
+.para{
+    width:350px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #212121;
+}
+
+
+/* page 2 */
+
+.page2{
+    background-color: #020202;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 35px;
+}
+.pg2-img{
+    width: 600px;
+}
+.pg2-txt{
+    width: 600px;
+}
+.pg2-txt ul li {
+    color: white;
+    /* line-height: 1.5px; */
+    font-size: 1.6rem;
+    padding: 8px 2px;
+}
+
+/* page 3 */
+
+.page3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    column-gap: 0px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.pg3-txt{
+    width: 600px;
+}
+.pg3-img-box{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 35px;
+}
+.pg3-img{
+    width: 200px;
+}
+.pg3-title{
+    background-color: #d7d7d7;
+    color: black;
+    font-size: 2.5rem;
+    padding: 20px 30px;
+    width: 300px;
+    font-weight: bold;
+}
+
+/* page 4 */
+
+.page4{
+    background-color: #4d4d4d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    column-gap: 35px;
+    padding: 10px 0px;
+}
+.pg4-img{
+    width: 600px;
+}
+.pg4-txt{
+    width: 600px;
+}
+
+/* page 5 */
+.page5{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    column-gap: 35px;
+    /* padding: 10px 0px; */
+}
+.pg5-img{
+    width: 600px;
+}
+.pg5-txt{
+    width: 600px;
+    padding: 0px 25px ;
+    color: rgb(88, 88, 88);
+}
+
+/* page 6 */
+.page6{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 35px;
+    /* padding: 10px 0px; */
+    color: white;
+}
+.pg6-img{
+    width: 600px;
+}
+.pg6-txt{
+    width: 600px;
+    padding: 0px 25px ;
+    color: white;
+}
+/* page 7*/
+.page7{
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 35px;
+    /* padding: 10px 0px; */
+    color: white;
+}
+.pg7-img{
+    width: 600px;
+}
+
+
+
+footer{
+    background-color: black;
+    height: 90px;
+    color: white;
+    padding: 35px 0px;
+}

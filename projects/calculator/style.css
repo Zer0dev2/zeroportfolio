@@ -1,0 +1,62 @@
+/* table tr td {
+    border: 1px solid black;
+} */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+}
+
+.main-box{
+    width:240px;
+    margin: auto;
+    background-color:#2e2e34;
+    padding: 10px;
+    border-radius: 18px;
+}
+.btn-n{
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    margin: 3px;
+    border: none;
+    background-color: #4e4e5c;
+    color: white;
+    box-shadow: 0 0 10px black;
+}
+#btn-equal{
+    width: 56px;
+    font-size: 1.4rem;
+    border: none;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    text-align: center;
+    height: 100px;
+}
+input:hover{
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255);
+    color: #2e2e34;
+    box-shadow: 0 0 10px crimson;
+}
+#ans{
+    width: 215px;
+    height: 40px;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 8px #4e4e5c;
+    color: white;
+    text-align: right;
+
+}

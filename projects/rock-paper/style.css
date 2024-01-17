@@ -1,0 +1,186 @@
+*{
+    font-family: cursive;
+    padding: 0;
+    margin: 0%;
+}
+#game-box{
+  width: 70%;
+  height: max-content;
+  padding: 15px;
+  margin: auto;
+  margin-top: 50px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px 5px #1564ad;
+}
+#main-box{
+    /* background-color: aquamarine; */
+    width: 80%;
+    
+    margin-top: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    vertical-align: middle;
+}
+#comp{
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#user{
+    /* background-color: darkgoldenrod; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    margin: 10px;
+    
+}
+#comp-paper,#user-paper{
+  font-size:28px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#fff;
+  border-color:#337bc4;
+  font-weight:bold;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  text-shadow: 0px 1px 0px #528ecc;
+  background:linear-gradient(#79bbff, #378de5);
+  
+  }
+  #user-paper:hover{
+    box-shadow: 3px 4px 0px 0px rgb(48, 5, 117);
+  text-shadow: 0px 1px 0px rgba(38, 70, 3, 1);
+    background:linear-gradient(rgba(240, 231, 69, 0.77), rgba(208, 2, 194, 0.9));
+    color: rgb(1, 242, 250);
+    transition: 400ms;
+    transform: scale(1.1);
+    
+  }
+  #comp-paper:hover{
+    box-shadow: 3px 4px 0px 0px rgb(48, 5, 117);
+  text-shadow: 0px 1px 0px rgba(38, 70, 3, 1);
+  background:linear-gradient(rgba(240, 231, 69, 0.77), rgba(208, 2, 194, 0.9));
+    color: rgb(1, 242, 250);
+    transition: 400ms;
+    transform: scale(1.1);
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+
+  #comp-rock,#comp-paper,#comp-sissor{
+    cursor: no-drop;
+  }
+
+  #comp-rock, #user-rock{
+    font-size:28px;
+    font-family:Arial;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#fff;
+    border-color:rgba(208, 2, 27, 1);
+    font-weight:bold;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    box-shadow: 3px 4px 0px 0px rgba(255, 6, 37, 1);
+    text-shadow: 0px 1px 0px rgba(208, 2, 27, 1);
+    background:linear-gradient(rgba(240, 69, 89, 0.77), rgba(208, 2, 27, 0.9));
+  }
+#user-rock:hover{
+  background:linear-gradient(rgba(179, 255, 96, 1), rgba(79, 146, 3, 1));
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  color: crimson;
+  transition: 400ms;
+  transform: scale(1.1);
+  
+}
+#comp-rock:hover{
+  background:linear-gradient(rgba(179, 255, 96, 1), rgba(79, 146, 3, 1));
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  color: crimson;
+  transition: 400ms;
+  transform: scale(1.1);
+}
+
+  #comp-sissor,#user-sissor{
+    font-size:28px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#fff;
+  border-color:rgba(49, 92, 1, 1);
+  font-weight:bold;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  box-shadow: 3px 4px 0px 0px rgba(65, 117, 5, 1);
+  text-shadow: 0px 1px 0px rgba(38, 70, 3, 1);
+  background:linear-gradient(rgba(179, 255, 96, 1), rgba(79, 146, 3, 1));
+  }
+  #user-sissor:hover{
+    box-shadow: 3px 4px 0px 0px rgba(65, 117, 5, 1);
+  text-shadow: 0px 1px 0px rgba(38, 70, 3, 1);
+    background:linear-gradient(rgba(240, 69, 89, 0.77), rgba(208, 2, 27, 0.9));
+    color:rgb(0, 0, 0);
+    transition: 400ms;
+    transform: scale(1.1);
+    
+  }
+  #comp-sissor:hover{
+    box-shadow: 3px 4px 0px 0px rgba(65, 117, 5, 1);
+  text-shadow: 0px 1px 0px rgba(38, 70, 3, 1);
+    background:linear-gradient(rgba(240, 69, 89, 0.77), rgba(208, 2, 27, 0.9));
+    color: rgb(0, 0, 0);
+    transition: 400ms;
+    transform: scale(1.1);
+  }
+
+  img{
+    width: 100%;
+    display: none;
+    position: relative;
+    
+  }
+  #comp-img div,#user-img{
+    width: 150px;
+    margin-top: 100px;
+  }
+  #emo{
+    animation: ee 1s infinite  ;
+
+
+  }
+  @keyframes ee {
+    0%{
+      transition: 400ms;
+      transform: scale(0.5);
+    }
+    30%{
+      transform: scale(0.9);
+    }
+    80%{
+      transition: 400ms;
+      transform: scale(1.1);
+    }
+    100%{
+      transition: 400ms;
+      transform: scale(0.5);
+    }
+  }

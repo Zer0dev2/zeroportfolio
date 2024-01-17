@@ -1,0 +1,104 @@
+@media screen and (max-width: 700px) {
+    *{
+        overflow-x:hidden;
+    }
+    
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color:transparent;
+  /* border-radius: 20px; */
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0px;
+  background-color:transparent;
+  border-radius: 20px;}
+
+  .header {
+    width: 100%;
+    height: 100vh;
+  }
+  .page1 .vid video {
+    width: 100%;
+    height: 100vh;
+  }
+  .page1 .homeimg img {
+    width: 33%;
+  }
+
+  .page1 .content .text h2 {
+    font-size: 16.5vw;
+  }
+
+  .page1 .content .text h3 {
+    font-size: 8vw;
+  }
+  .page1 .content .text strong {
+    font-size: 4vw;
+  }
+  .page-start {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    text-align: center;
+    font-size: 10vw;
+  }
+  .p2-img {
+    overflow: hidden;
+    height: 84%;
+    width: 69vw;
+  }
+  .col-md {
+    padding: 26px;
+  }
+  .page2 {
+    height: fit-content;
+  }
+  .page-heading {
+    font-size: 8vw;
+  }
+  .p2txt p {
+    font-size: 21px;
+    width: 98%;
+    text-align: justify;
+}
+.p3-img {
+    overflow: hidden;
+    /* height: 81%; */
+    width: 81vw;
+}
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+    row-gap: 54px;
+}
+
+.sbtn {
+
+    font-size: 14px;
+}
+.pbox {
+    width: 86%;
+}
+.projectimg {
+    width: 100%;
+    height: 161px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    /* border-radius: 10px; */
+    padding: 0;
+    margin-left: 0;
+}
+.miniprojects{
+    width: 100%;
+    padding-left: 50px;
+}
+.contactimg div img {
+    object-position: center;
+    object-fit: cover;
+    height: 68vw;
+    width: 78vw;}
+    .contactimg div {
+        width: fit-content;}
+}

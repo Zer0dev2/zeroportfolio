@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        font-family: "Dubai Medium" !important;
+        background-image: linear-gradient(
+          50deg,
+          rgb(19, 19, 186),
+          rgb(255, 14, 255)
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      }
+      .box {
+      }
+      .box h1 {
+        font-size: 4rem;
+        font-weight: bolder;
+      }
+      .box span {
+        color: rgb(255, 149, 0);
+      }
+
+      button {
+        background-color: yellow;
+        font-size: 2rem;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.724);
+        transition: 250ms ease all;
+      }
+      button:hover {
+        cursor: pointer;
+        transform: scale(1.03) rotate(2deg);
+      }
+
+      input {
+        width: 200px;
+        padding: 7px 15px;
+        font-size: 1.3rem;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        
+      }
+      .inner {
+        width: 450px;
+        background-color: rgba(240, 248, 255, 0.622);
+        padding: 30px 40px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .res {
+        display: none;
+        color: white;
+        color: white;
+        /* border: 1px solid black; */
+        padding: 10px;
+        font-size: 1.8rem;
+        /* background: yellow; */
+        background-image: linear-gradient(
+          25deg,
+          rgb(255 14 255 / 49%),
+          rgb(19 19 215 / 41%)
+        );
+        border-radius: 7px;
+        text-shadow: 4px -2px 2px midnightblue;
+
+      }
+      @media screen and (max-width:600px) {
+        .inner{
+            width: 80%;
+            margin: auto;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+        .box h1{
+            font-size: 50px;
+            text-align: center;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Age <span>Calculator</span></h1>
+      <div class="inner">
+        <form action="" name="ff">
+        <input type="date" id="date" name="datcal" />
+    </form>
+        <button onclick="calculateAge()">calculate</button>
+      </div>
+
+      <div>
+        <p class="res"></p>
+      </div>
+    </div>
+
+    <script>
+      let userDate = document.getElementById("date");
+      userDate.max = new Date().toISOString().split("T")[0];
+
+      function calculateAge() {
+        let birthDate = new Date(userDate.value);
+        let day1 = birthDate.getDate();
+        let month1 = birthDate.getMonth() + 1;
+        let year1 = birthDate.getYear();
+
+        let today = new Date();
+        let day2 = today.getDate();
+        let month2 = today.getMonth() + 1;
+        let year2 = today.getYear();
+
+        let year3, month3, day3;
+        year3 = year2 - year1;
+
+        if (month2 >= month1) {
+          month3 = month2 - month1;
+        } else {
+          year3--;
+          month3 = 12 + month2 - month1;
+        }
+
+        if (day2 >= day1) {
+          day3 = day2 - day1;
+        } else {
+          month3--;
+          day3 = days_in_month(year1, month1) + day2 - day1;
+        }
+
+        // console.log(year3,month3,day3)
+
+        let ansfield = document.querySelector(".res");
+        ansfield.style.display = "block";
+        // ansfield.innerHTML = day3, "Days",month3," Months ",year3, " Years " ;
+
+        var n = document.ff.datcal.value;
+        if(n==""){
+            ansfield.innerHTML="Please pick a date "
+        }
+        else{
+
+
+        ansfield.innerHTML = `${day3} <span> Days </span> ${month3} <span> Months </span> ${year3} <span> years </span>`;
+        }
+      }
+      function days_in_month(year, month) {
+        return new Date(year, month, 0).getDate();
+      }
+    </script>
+  </body>
+</html>

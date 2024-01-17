@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- links  -->
+    <!-- bootstrap    -->
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="res.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+
+  <div class="loader"><span>WELCOME ^.^</span></div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark " aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/web-design.gif" style="width: 40px;" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                  <a class="navbar-brand" href="#"><img src="img/web-design.gif" style="width: 40px;" alt=""></a>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#edu">Education</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#skill">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+          </nav>
+        
+    </header>
+
+    <div class="page1" >
+        <div class="vid">
+            <video src="img/bg.mp4" autoplay muted loop ></video>
+        </div>
+        <div class="content row">
+            <div class="col-md text">
+              <div class=" homeimg">
+                <img src="img/home.jpg" class="img img-fluid" alt="">
+            </div>
+                <h2 class="hello"><span>H</span><span>E</span><span>L</span><span>L</span><span>O</span></h2>
+                <h3>I'M SOMNATH</h3>
+                <strong>Website designer & Developer</strong>
+                <br>
+                
+                <a href="details.pdf" download><button >Download CV</button></a>
+            </div>
+          
+        </div>
+    </div>
+
+    <div class=" page-start">Who am I?
+      <div class="line" id="about"></div>
+    </div>    
+    <div class="page2 row"  data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+      <div class="col-md ">
+        <div class="p2-img " data-tilt >
+          <img src="img/about.jpg" alt="" class="img-fluid data-tilt">
+        </div>
+      </div>
+      <div class="col-md p2txt" >
+        <h2 class="page-heading">About Me</h2>
+        <p>I'm <span style="color: #36e327; font-weight: bold;">Somnath 
+        Website Designer & Developer.</span> In my journey of Computer Applications and web applications, my enthusiasm for exploring the continues to grow. To continuously enhance my knowledge skills and experience by getting involved challenging work environment and utilize them for personal growth.
+        <br>
+        I am eager to further specialize in area that align with my interest, be website development, web applications. I am excited about the possibilities that the remaining years of my journey.
+        </p>
+        <br>
+        <div>
+          <div class="con">
+            <strong>Contact</strong> <br>
+            <span>8375014675</span>
+          </div>
+          <div class="con">
+            <strong>Email</strong> <br>
+            <span>samizaynsz1234@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class=" page-start">What's my education?
+      <div class="line" id="edu"></div>
+    </div>    
+
+    <div class="row page3"data-aos="flip-up">
+      <div class="col-md pg3txt">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- acc start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Higher School
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                I passed  higher school with securing an overall percentage 79% in Year 2021. My acedemic focus included subjects such as Physics, Chemistry, Mathematics and Computer Science.
+              </div>
+            </div>
+          </div>
+          <!-- acc end -->
+
+          <!-- acc start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                Graduation - BCA (Bachelors in Computer Applications)
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">I am currently pursuing my undergraduate degree in Computer Applications from Shyam Lal Collage,  and I am in my third year of the program. 
+                Where I learned technology like " Structured Programing, Object oriented programming , System design and development, Logic Building and etc".</div>
+            </div>
+          </div>
+          <!-- acc end -->
+          <!-- acc start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+                ADCE ( Advanced Diploma In Computer Engineering ) 
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Apart from my graduation, I also completed an addition Diploma on Computer Engineering from IICS (Indian Institute  of Computer Science), it was a 2.5 year program where the challenges presented by coding excercises, real-world applications, website development and design, ecommerce development by wordpress .
+              </div>
+            </div>
+          </div>
+          <!-- acc end -->
+          <!-- acc start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseOne">
+                Digital Marketing
+              </button>
+            </h2>
+            <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                In additional to enhance by knowledge I completed a short course on Digital Marketing form IICS (Indian Institute  of Computer Science), that teach me fundamentals of website uploading on live with proper ranking on search platforms  and website SEO, and managing Google platforms like ( Google Search console, Google Ads , Google Analytics ).
+              </div>
+            </div>
+          </div>
+          <!-- acc end -->
+
+
+          
+         </div>
+         </div>
+
+
+      <div class="col-md ">
+        <div class="p3-img">
+          <img src="img/edu.jpg" alt="" class="img-fluid"  data-tilt>
+        </div>
+      </div>
+    </div>
+<br><br><br>
+    <!-- page 4 -->
+    <section class="" id="page4">
+    <div class=" page-start" id="skill">What's my Skills?
+      <div class="line"></div>
+    </div> 
+    <div class="container px-4 py-5" id="icon-grid">
+     
+  
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 py-5" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="col d-flex align-items-start">
+          <div class="iconimg">
+            <img src="img/web-design.gif" class="img-fluid" alt="">
+          </div>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis togglecolor">Website Devlopment</h3>
+            <div  class="skillb">
+              <button class="sbtn">HTML</button>
+              <button class="sbtn">CSS </button>
+              <button class="sbtn">JAVASCRIPT</button>
+              <button class="sbtn">PHP</button>
+              <button class="sbtn">SQL</button>
+              <button class="sbtn">WORDPRESS</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="iconimg">
+            <img src="img/lib.gif" class="img-fluid" alt="">
+          </div>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis togglecolor">Web Frameworks</h3>
+           <div  class="skillb"> <button class="sbtn">BOOTSTRAP</button>
+            <button class="sbtn">JQUERY</button>
+            <button class="sbtn">GSAP</button>
+            <button class="sbtn">AOS JS</button>
+            <button class="sbtn">REACT  JS </button>
+            <button class="sbtn">NEXT JS</button>
+          </div>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="iconimg">
+            <img src="img/ux.gif" class="img-fluid" alt="">
+          </div>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis togglecolor">Ui/Ux</h3>
+            <DIV  class="skillb">
+              <button class="sbtn">FIGMA</button>
+              <button class="sbtn">PHOTOSHOP</button>
+              <button class="sbtn">CANVA</button>
+              <button class="sbtn">WEB LAYOUT</button>
+            </DIV>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="iconimg">
+            <img src="img/dm.gif" class="img-fluid" alt="">
+          </div>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis togglecolor">Digital Marketing</h3>
+            <DIV  class="skillb">
+              <button class="sbtn">ON-PAGE SEO</button>
+              <button class="sbtn">OFF-PAGE SEO</button>
+              <button class="sbtn">GOOGLE ADS</button>
+              <button class="sbtn">ARTICLE WRITING</button>
+              <button class="sbtn">GOOGLE SEARCH CONSOLE</button>
+              <button class="sbtn">GOOGLE ANALYTICS</button>
+
+            </DIV>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+    <br><br><br>
+    <!-- page 5 -->
+    <div class=" page-start" id="projects">My Projects
+      <div class="line"></div>
+    </div>
+
+    <div class="row" data-aos="fade-up"
+    data-aos-duration="2000">
+      <div class="col-9 col-md mainprojects m-3">
+        <div class="row ">
+
+          <div class="col-md  pbox"  data-tilt>
+            <div class="projectimg">
+              <img src="projects/rej.PNG" class="img-fluid" alt="">
+            </div>
+            <h2>Rejouice Landing page</h2>
+            
+            <a href="https://zer0dev2.github.io/rejoicedemo/" target="_blank"> <button>VIEW</button></a>
+          </div>
+
+          <div class="col-md pbox"  data-tilt>
+            <div class="projectimg">
+              <img src="projects/movieapp.PNG" class="img-fluid" alt="">
+            </div>
+            <h2>Movie Review App</h2>
+            <a href="projects/movieapp/index.html">        <button>VIEW</button></a>
+          </div>
+
+          <div class="col-md pbox"  data-tilt>
+            <div class="projectimg">
+              <img src="projects/paytm.PNG" class="img-fluid" alt="">
+            </div>
+            <h2>Paytm Landing  page</h2>
+           
+           <a href="https://zer0dev2.github.io/paytmclone/" target="_blank"> <button>VIEW</button></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md pbox"  data-tilt>
+            <div class="projectimg">
+              <img src="projects/food.PNG" class="img-fluid" alt="">
+            </div>
+            <h2>Food website</h2>
+            
+            <a href="https://zer0dev2.github.io/noodleweb/" target="_blank"><button>VIEW</button></a>
+          </div>
+
+          <div class="col-md pbox"  data-tilt>
+            <div class="projectimg">
+              <img src="projects/gym.PNG" class="img-fluid" alt="">
+            </div>
+            <h2>Fitneso website</h2>
+       
+            <a href="https://zer0dev2.github.io/gymapp/" target="_blank"> <button>VIEW</button></a>
+          </div>
+
+          <div class="col-md pbox"  data-tilt>
+            <div class="projectimg">
+              <img src="projects/mob.PNG" class="img-fluid" alt="">
+            </div>
+            <h2>Mobile App page</h2>
+            <a href="https://zer0dev2.github.io/mobdemo2/" target="_blank"><button>VIEW</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 col-lg-3   miniprojects">
+        <h2 class="togglecolor">Other Projects</h2>
+        <ul>
+          <li><a href="projects/apple-web/index.html" target="_blank">Apple Watch landing page</a>  </li>
+          <li><a href="projects/calculator/cal.html" target="_blank">Calculator App</a></li>
+          <li><a href="projects/to-do-list/to-do-list.html" target="_blank">To-Do-List App</a></li>
+          <li><a href="projects/ageCalculator.html" target="_blank">Age Calculator App</a></li>
+          <li><a href="projects/generate_random_password.html" target="_blank">Random Password Generator</a></li>
+          <li><a href="projects/stopwatch/stopwatch.html" target="_blank">Stopwatch</a></li>
+          <li><a href="projects/weather-app/weather.html" target="_blank">Weather-App</a></li>
+          <li><a href="projects/rock-paper/index.html" target="_blank">Rock Paper Sissor Game</a></li>
+
+
+        </ul>
+      </div>
+    </div>
+
+    <br><br><br>
+        <!-- page 6 -->
+        <div class=" page-start" id="contact">Contact me
+          <div class="line"></div>
+        </div>
+    <div class="row contact" data-aos="fade-up"
+    data-aos-duration="1000">
+      
+
+      <div class="col-md conform">
+        <form  class="needs-validation" action="https://formspree.io/f/xwkddppq"
+        method="POST" >
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="enter your name" name="nn" required>
+            <label for="floatingInput">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="enter your email" name="em" required>
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="enter your subject"  name="sub">
+            <label for="floatingInput">Subject</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="enter your message "  name="mess">
+            <label for="floatingInput">Message</label>
+          </div>
+          <button class="formbtn">submit</button>
+        </form>
+        
+      </div>
+      <div class="col-md contactimg">
+        <div>
+          <img src="img/form.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>    
+    <script src="gsapp.js"></script>
+    <script src="scroll.js"></script>
+    
+    <script src="script.js"></script>
+    <script src="vanilla-tilt.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>

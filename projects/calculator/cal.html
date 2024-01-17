@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main-box">
+        <form action="" name="ff">
+            <input type="text" name="field"  id="ans">
+        </form>
+        <div class="cal">
+            <table>
+                <tr>
+                    <td> <input type="button" class="btn-n" value="+" name="plus"  onclick="ff.field.value+='+'"></td>
+                    <td> <input type="button" class="btn-n" value="-" name="minus"  onclick="ff.field.value+='-'"></td>
+                    <td> <input type="button" class="btn-n" value="/" name="divide"  onclick="ff.field.value+='/'"></td>
+                    <td> <input type="button" class="btn-n" value="*" name="mul"  onclick="ff.field.value+='*'"></td>
+
+                </tr>
+                <tr>
+                    <td> <input type="button" class="btn-n" value="7" name="seven" onclick="ff.field.value+='7'" ></td>
+                    <td> <input type="button" class="btn-n" value="8" name="eight"  onclick="ff.field.value+='8'"></td>
+                    <td> <input type="button" class="btn-n" value="9" name="nine"  onclick="ff.field.value+='9'"></td>
+                    <td> <input type="button" class="btn-n" value="%" name="percent"  onclick="ff.field.value+='%'"></td>
+
+                </tr>
+                <tr>
+                    <td> <input type="button" class="btn-n" value="4" name="four" onclick="ff.field.value+='4'" ></td>
+                    <td> <input type="button" class="btn-n" value="5" name="five" onclick="ff.field.value+='5'" ></td>
+                    <td> <input type="button" class="btn-n" value="6" name="six"  onclick="ff.field.value+='6'"></td>
+                    <td> <input type="button" class="btn-n" value="C" name="cancle"  onclick="cancle()"></td>
+
+                </tr>
+                <tr>
+                    <td> <input type="button" class="btn-n" value="1" name="one" onclick="ff.field.value+='1'" ></td>
+                    <td> <input type="button" class="btn-n" value="2" name="two" onclick="ff.field.value+='2'" ></td>
+                    <td> <input type="button" class="btn-n" value="3" name="three" onclick="ff.field.value+='3'" ></td>
+                    <td rowspan="2" style="background-color: yellow ; border-radius: 12px;"   > <input type="button" id="btn-equal" value="=" name="equal" onclick="equal()" ></td>
+
+                    <!-- <td> <input type="button" class="btn-n" value="*" name="mul" ></td> -->
+
+                </tr>
+                <tr>
+                    <td> <input type="button" class="btn-n" value="00" name="zero2"  onclick="ff.field.value+='00'"></td>
+                    <td> <input type="button" class="btn-n" value="0" name="zero"  onclick="ff.field.value+='0'"></td>
+                    <td> <input type="button" class="btn-n" value="." name="dec" onclick="ff.field.value+='.'" ></td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

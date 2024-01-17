@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch </title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            background-image: radial-gradient(#2f2f2f,#1a1a1af7);
+        }
+        img{
+            width: 50px;
+            transition: 300ms ease-out all ;
+
+        }
+        button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: 300ms ease all ;
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+        img:hover{
+            box-shadow: -2px 4px 10px 0px rgb(46, 46, 46);
+            border-radius: 50%;
+        }
+        .main{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            padding: 20px;
+            background-image: radial-gradient(black,transparent);
+    border: none;
+    border-radius: 8%;
+    box-shadow: 0 0 25px black;
+        }
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 2px;
+            font-size: 2rem;
+            font-weight: 500;
+            color: whitesmoke;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p><span id="hour">00</span> : <span id="min">00</span> : <span id="sec">00</span> : <span id="ms">00</span></p>
+        <div>
+            <button id="stop" onclick="wacthStop()"><img src="stop.png" alt=""></button>
+            <button id="restart" onclick="wacthReset()"><img src="restart.png" alt=""></button>
+            <button id="play" onclick="watchStart()">
+                <img src="play.png" alt="">
+            </button>
+        </div>
+    </div>
+</body>
+<script>
+    
+    let stopBtn = document.getElementById("stop")
+    let restartBtn = document.getElementById("restart")
+    let playBtn = document.getElementById("play")
+    // let time = new Date()
+    let ms = document.getElementById("ms")
+    let sec = document.getElementById("sec")
+    let hr = document.getElementById("hour")
+    let min  = document.getElementById("min")
+    
+    let mili = 0
+    let seconds = 0
+    let minutes = 0 
+    let hour = 0
+    
+    let start;
+    function play(){
+
+        mili++
+        if(mili==100){
+            mili=0
+            seconds++
+            if(seconds==60){
+                seconds=0
+                minutes++
+                if(minutes==60){
+                    minutes=0
+                    hour++
+                }
+            }
+            
+        }
+       
+        mili = timeStr(mili)
+        seconds = timeStr(seconds)
+        minutes = timeStr(minutes)
+        hour = timeStr(hour)
+
+        ms.innerHTML= mili
+        sec.innerHTML = seconds
+        min.innerHTML = minutes
+        hr.innerHTML = hour
+
+        function timeStr (time){
+            time = time.toString();
+            return  time.length<2 ? "0" +time :time;
+        }
+    }
+
+    function watchStart(){
+    start = setInterval(play,1)
+
+    }
+
+    function wacthStop(){
+        clearInterval(start)
+    }
+
+    function wacthReset(){
+        clearInterval(start)
+       mili=0
+       seconds=0
+       hour = 0
+       minutes=0
+        ms.innerHTML= "00"
+        sec.innerHTML = "00"
+        min.innerHTML = "00"
+        hr.innerHTML = "00"        
+        console.log(1)
+    }
+
+
+</script>
+</html>
+
+
+
+
+
+
+
